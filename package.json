@@ -1,10 +1,11 @@
 {
-  "name": "proto",
+  "name": "gwc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src"
   },
+  "bin": "src/index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
