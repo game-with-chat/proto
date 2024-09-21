@@ -18,7 +18,28 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "tumblepkgs": "tumblepkgs"
+      }
+    },
+    "tumblepkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1726919112,
+        "narHash": "sha256-MiWSwJC8UnLvKMDzH53gf9oRD96iDp4L3OAH3MiTH0k=",
+        "ref": "refs/heads/main",
+        "rev": "29d0afff0dcd1178418edc975cc20b29b05e9ccb",
+        "revCount": 3,
+        "type": "git",
+        "url": "https://git.disroot.org/tumble/tumblepkgs"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.disroot.org/tumble/tumblepkgs"
       }
     }
   },
