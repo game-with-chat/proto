@@ -1,3 +1,16 @@
 html {
     overflow: hidden;
+    position: relative;
+}
+
+#game-bar {
+display: ;
+position: absolute;
+bottom: 5%;
+align-self: ;
+left: 50%;
+translate: -50% 0;
+background: #ffffff59;
+padding: 0.5vw 3vh;
+border-radius: 1rem;
 }

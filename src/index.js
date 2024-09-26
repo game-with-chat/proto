@@ -35,7 +35,6 @@ io.on("connection",socket=>{
   })
 
   socket.on("move",pos=>{
-    console.debug(players)
     console.debug("[socket:move]",pos);
     if(!checkAuth()) return;
     if(!("room" in player)) return
@@ -52,6 +51,14 @@ io.on("connection",socket=>{
     socket.join(room)
     player.room = room;
     socket.emit("room",Object.values(players[room]))
+    })
+    
+    socket.on("chat",message=>{
+    console.debug("[socket:chat]",message);
+    if(!checkAuth()) return;
+      const {id,room} = player
+      io.to(room).emit("chat",{id,message})
+      
     })
 })
 
