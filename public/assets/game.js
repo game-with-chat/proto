@@ -16,6 +16,9 @@ function createPlayer(player) {
 
 	function chat(message) {
 		chatMessage.text = message;
+		setTimeout(()=>{
+			chatMessage.text = "";
+		},3000)
 	}
 
 	const container = new Container();
